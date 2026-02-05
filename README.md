@@ -19,19 +19,51 @@ Welcome to the **UI-Component-Generator** repository! This project is a modern w
 The project is organized into a client-server architecture as seen in the source code:
 
 ```
+UI-Component-Generator/
+├── public/                          # Public static files (e.g., favicon, index.html)
+│   ├── favicon.ico
+│   └── index.html
+│
+├── src/                             # Frontend source code
+│   ├── assets/                      # Images, icons, media
+│   │   └── logo.png
+│   │
+│   ├── components/                  # Reusable UI components
+│   │   ├── ComponentCard.jsx
+│   │   ├── ComponentList.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   └── Sidebar.jsx
+│   │
+│   ├── contexts/                    # React context providers
+│   │   └── UIContext.jsx
+│   │
+│   ├── data/                        # Static data / configs
+│   │   └── componentData.js
+│   │
+│   ├── pages/                       # Page views for the app
+│   │   ├── Home.jsx
+│   │   └── Playground.jsx
+│   │
+│   ├── services/                    # API or logic services
+│   │   └── generatorService.js
+│   │
+│   ├── styles/                      # CSS / styling files
+│   │   └── global.css
+│   │
+│   ├── utils/                       # Utilities/helpers
+│   │   └── helpers.js
+│   │
+│   ├── App.jsx                     # Root app component
+│   └── index.js                    # Entry point for React DOM render
+│
+├── .gitignore
+├── package.json                     # Dependencies, scripts & project config
+├── tailwind.config.js               # Tailwind CSS config
+├── postcss.config.js                # PostCSS config
+├── README.md                        # Main README documentation
+└── LICENSE                          # License text (MIT License)
 
-``` text
-/
-├── public/ # Static assets
-├── server/ # Backend server logic
-├── src/ # Frontend source code
-│ ├── assets/ # Images and styles
-│ ├── App.jsx # Main application component
-│ └── main.jsx # Entry point
-├── eslint.config.js # Linting configuration
-├── tailwind.config.js # Tailwind CSS configuration
-├── vite.config.js # Vite configuration
-└── package.json # Project dependencies
 
 ```
 
