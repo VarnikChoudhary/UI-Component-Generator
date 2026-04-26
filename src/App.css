@@ -1,6 +1,25 @@
 
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f9fafb;
+  --tertiary-bg: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+  --input-bg: #ffffff;
+}
+
+.dark {
+  --primary-bg: #09090B;
+  --secondary-bg: #141319;
+  --tertiary-bg: #17171C;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #1f2937;
+  --input-bg: #09090B;
+}
+
 * {
-  /* margin: 0; */
   box-sizing: border-box;
 }
 
@@ -11,13 +30,8 @@ html {
 body {
   overflow-x: hidden;
   background-color: var(--primary-bg);
-  color: #fff;
-}
-
-:root {
-  --primary-bg: #09090B;
-  --secondary-bg: #141319;
-  --tertiary-bg: #17171C;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sp-text {
@@ -28,11 +42,19 @@ body {
 }
 
 
-.icon{
+.icon {
   padding: 15px;
   font-size: 20px;
-  border: 1px solid #1f2937;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   background-color: var(--secondary-bg);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background-color: var(--tertiary-bg);
 }
