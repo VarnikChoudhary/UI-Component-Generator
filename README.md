@@ -1,16 +1,78 @@
-# React + Vite
+# UI Component Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern frontend tool built with **React + Vite** that lets you generate reusable UI components dynamically using **natural language prompts**.
 
-Currently, two official plugins are available:
+Say goodbye to repetitive manual coding — describe what you want, and let the generator build beautiful, production-ready components for you.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **AI-Powered Component Generation** — Create UI components from natural language descriptions
+- **Built with Modern Stack** — Fast development with React 18 + Vite
+- **Tailwind CSS** — Beautiful, responsive, and customizable styling out of the box
+- **Reusable & Clean Code** — Generates modern, readable React components
+- **Developer Productivity** — Significantly reduces time spent on boilerplate UI code
+- **Full-Stack Ready** — Includes a `server/` folder for potential backend integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React, Vite, JavaScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Linting**: ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/VarnikChoudhary/UI-Component-Generator.git
+   cd UI-Component-Generator
+
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) (or the port shown in terminal) to view the app.
+
+> **Note**: The project also includes a `server/` folder — you may need to set up and run the backend separately depending on your configuration.
+
+## 📖 How to Use
+
+1. Enter a description of the UI component you want (e.g., "A modern login form with email, password, remember me checkbox, and social login buttons").
+2. Click **Generate**.
+3. Review the generated React + Tailwind component.
+4. Copy the code and use it directly in your projects.
+
+## Project Structure
+
+```
+UI-Component-Generator/
+├── public/              # Static assets
+├── src/                 # React source code
+├── server/              # Backend/server code
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+├── eslint.config.js
+├── package.json
+└── README.md
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to:
+
+- Open issues for bugs or feature requests
+- Submit pull requests for improvements
+- Suggest better prompts or generation logic
+
+
+**Made with ❤️ by [Varnik Choudhary](https://github.com/VarnikChoudhary)**
+
+---
